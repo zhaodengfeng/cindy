@@ -1,0 +1,629 @@
+{
+  "status": "passed",
+  "mode": "check",
+  "engine": "electron",
+  "startedAt": "2026-10-19T09:38:42.917Z",
+  "commit": "cf581dc8d0834e344922cb1099bde1bb037b3892",
+  "worktreeDirty": true,
+  "timings": {
+    "buildMs": 2966,
+    "launchMs": 212,
+    "variantsMs": 7571,
+    "overviewMs": 394,
+    "closeMs": 60,
+    "totalMs": 11270
+  },
+  "pages": [
+    {
+      "name": "group-chat",
+      "real": "BotGroupChatView (timeline, composer, send button, header registration), ControlledBanner, ContentHeader shell, Markdown, theme, fonts and translations",
+      "notCovered": "Sending, round control, real device-link control and revocation, pending interactions, plans and attachments; the sidebar is an empty frame",
+      "replaced": {},
+      "inputCount": 5732,
+      "sourceDigest": "063ab48c0f8febc455bfc84e1e916be4900b0a94fa7b6980194a86adb273deb2",
+      "bundleDigest": "01d2afe85f24970e972214d5d8c94c5a9e1fffdd06b62a6ec698f43068815d6b"
+    },
+    {
+      "name": "pr6016-presets",
+      "real": "ProviderConnectionDialog, shared Popover/Radix Dialog, production styles, fonts, themes and bundled preset catalog",
+      "notCovered": "Provider saving, credentials, network requests, full Desktop, physical trackpad and Windows OS; only the read-only catalog IPC is supplied as fixture data",
+      "replaced": {},
+      "inputCount": 2513,
+      "sourceDigest": "15d43a878eb4b9b7e5e8270dc8ad4e281e370f33bd80a90638d25e58f3cb65ab",
+      "bundleDigest": "1fb68cb14d1d9b1332febbce81369a37d8bfb07095d0093ffd284bb6cecb24de"
+    }
+  ],
+  "variants": [
+    {
+      "id": "group-chat.default.light.zh-CN.1280x800",
+      "role": "after",
+      "page": "group-chat",
+      "case": "default",
+      "about": "Empty group, short controller name, expanded sidebar",
+      "theme": "light",
+      "locale": "zh-CN",
+      "platform": "darwin",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "status": "passed",
+      "screenshots": [
+        "group-chat.default.light.zh-CN.1280x800/initial.png",
+        "group-chat.default.light.zh-CN.1280x800/connected.png",
+        "group-chat.default.light.zh-CN.1280x800/collapsed.png",
+        "group-chat.default.light.zh-CN.1280x800/final.png"
+      ],
+      "errors": [],
+      "warnings": [],
+      "hostMissing": [
+        "onSessionAttentionCleared",
+        "onUsageSessionSpendChanged",
+        "localDb",
+        "maker",
+        "authHasPersistedSessionHintSync",
+        "appearanceSettings",
+        "getFullscreenState",
+        "onFullscreenChange",
+        "agentIsland",
+        "setApplicationMenuLocale",
+        "setUpdateRelaunchTheme"
+      ],
+      "focus": [],
+      "timings": {
+        "readyMs": 433,
+        "checkMs": 162,
+        "totalMs": 649
+      }
+    },
+    {
+      "id": "group-chat.default.dark.zh-CN.1280x800",
+      "role": "after",
+      "page": "group-chat",
+      "case": "default",
+      "about": "Empty group, short controller name, expanded sidebar",
+      "theme": "dark",
+      "locale": "zh-CN",
+      "platform": "darwin",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "status": "passed",
+      "screenshots": [
+        "group-chat.default.dark.zh-CN.1280x800/initial.png",
+        "group-chat.default.dark.zh-CN.1280x800/connected.png",
+        "group-chat.default.dark.zh-CN.1280x800/collapsed.png",
+        "group-chat.default.dark.zh-CN.1280x800/final.png"
+      ],
+      "errors": [],
+      "warnings": [],
+      "hostMissing": [
+        "onSessionAttentionCleared",
+        "onUsageSessionSpendChanged",
+        "localDb",
+        "maker",
+        "authHasPersistedSessionHintSync",
+        "appearanceSettings",
+        "getFullscreenState",
+        "onFullscreenChange",
+        "agentIsland",
+        "setApplicationMenuLocale",
+        "setUpdateRelaunchTheme"
+      ],
+      "focus": [],
+      "timings": {
+        "readyMs": 182,
+        "checkMs": 140,
+        "totalMs": 375
+      }
+    },
+    {
+      "id": "group-chat.long-thread.light.zh-CN.800x600",
+      "role": "after",
+      "page": "group-chat",
+      "case": "long-thread",
+      "about": "40 messages: bottom pin and history position survive notice changes",
+      "theme": "light",
+      "locale": "zh-CN",
+      "platform": "darwin",
+      "viewport": {
+        "width": 800,
+        "height": 600
+      },
+      "status": "passed",
+      "screenshots": [
+        "group-chat.long-thread.light.zh-CN.800x600/initial.png",
+        "group-chat.long-thread.light.zh-CN.800x600/history.png",
+        "group-chat.long-thread.light.zh-CN.800x600/final.png"
+      ],
+      "errors": [],
+      "warnings": [],
+      "hostMissing": [
+        "onSessionAttentionCleared",
+        "onUsageSessionSpendChanged",
+        "localDb",
+        "maker",
+        "authHasPersistedSessionHintSync",
+        "appearanceSettings",
+        "getFullscreenState",
+        "onFullscreenChange",
+        "agentIsland",
+        "setApplicationMenuLocale",
+        "setUpdateRelaunchTheme"
+      ],
+      "focus": [],
+      "timings": {
+        "readyMs": 212,
+        "checkMs": 176,
+        "totalMs": 452
+      }
+    },
+    {
+      "id": "group-chat.long-thread.dark.zh-CN.800x600",
+      "role": "after",
+      "page": "group-chat",
+      "case": "long-thread",
+      "about": "40 messages: bottom pin and history position survive notice changes",
+      "theme": "dark",
+      "locale": "zh-CN",
+      "platform": "darwin",
+      "viewport": {
+        "width": 800,
+        "height": 600
+      },
+      "status": "passed",
+      "screenshots": [
+        "group-chat.long-thread.dark.zh-CN.800x600/initial.png",
+        "group-chat.long-thread.dark.zh-CN.800x600/history.png",
+        "group-chat.long-thread.dark.zh-CN.800x600/final.png"
+      ],
+      "errors": [],
+      "warnings": [],
+      "hostMissing": [
+        "onSessionAttentionCleared",
+        "onUsageSessionSpendChanged",
+        "localDb",
+        "maker",
+        "authHasPersistedSessionHintSync",
+        "appearanceSettings",
+        "getFullscreenState",
+        "onFullscreenChange",
+        "agentIsland",
+        "setApplicationMenuLocale",
+        "setUpdateRelaunchTheme"
+      ],
+      "focus": [],
+      "timings": {
+        "readyMs": 205,
+        "checkMs": 194,
+        "totalMs": 450
+      }
+    },
+    {
+      "id": "group-chat.long-device.light.zh-CN.1280x800",
+      "role": "after",
+      "page": "group-chat",
+      "case": "long-device",
+      "about": "Long controller device name in the notice",
+      "theme": "light",
+      "locale": "zh-CN",
+      "platform": "darwin",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "status": "passed",
+      "screenshots": [
+        "group-chat.long-device.light.zh-CN.1280x800/initial.png",
+        "group-chat.long-device.light.zh-CN.1280x800/connected.png",
+        "group-chat.long-device.light.zh-CN.1280x800/collapsed.png",
+        "group-chat.long-device.light.zh-CN.1280x800/final.png"
+      ],
+      "errors": [],
+      "warnings": [],
+      "hostMissing": [
+        "onSessionAttentionCleared",
+        "onUsageSessionSpendChanged",
+        "localDb",
+        "maker",
+        "authHasPersistedSessionHintSync",
+        "appearanceSettings",
+        "getFullscreenState",
+        "onFullscreenChange",
+        "agentIsland",
+        "setApplicationMenuLocale",
+        "setUpdateRelaunchTheme"
+      ],
+      "focus": [],
+      "timings": {
+        "readyMs": 188,
+        "checkMs": 138,
+        "totalMs": 382
+      }
+    },
+    {
+      "id": "group-chat.long-device.dark.zh-CN.1280x800",
+      "role": "after",
+      "page": "group-chat",
+      "case": "long-device",
+      "about": "Long controller device name in the notice",
+      "theme": "dark",
+      "locale": "zh-CN",
+      "platform": "darwin",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "status": "passed",
+      "screenshots": [
+        "group-chat.long-device.dark.zh-CN.1280x800/initial.png",
+        "group-chat.long-device.dark.zh-CN.1280x800/connected.png",
+        "group-chat.long-device.dark.zh-CN.1280x800/collapsed.png",
+        "group-chat.long-device.dark.zh-CN.1280x800/final.png"
+      ],
+      "errors": [],
+      "warnings": [],
+      "hostMissing": [
+        "onSessionAttentionCleared",
+        "onUsageSessionSpendChanged",
+        "localDb",
+        "maker",
+        "authHasPersistedSessionHintSync",
+        "appearanceSettings",
+        "getFullscreenState",
+        "onFullscreenChange",
+        "agentIsland",
+        "setApplicationMenuLocale",
+        "setUpdateRelaunchTheme"
+      ],
+      "focus": [],
+      "timings": {
+        "readyMs": 179,
+        "checkMs": 148,
+        "totalMs": 383
+      }
+    },
+    {
+      "id": "group-chat.multiline.light.zh-CN.1280x800",
+      "role": "after",
+      "page": "group-chat",
+      "case": "multiline",
+      "about": "Eight-line draft pushes the composer up",
+      "theme": "light",
+      "locale": "zh-CN",
+      "platform": "darwin",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "status": "passed",
+      "screenshots": [
+        "group-chat.multiline.light.zh-CN.1280x800/initial.png",
+        "group-chat.multiline.light.zh-CN.1280x800/connected.png",
+        "group-chat.multiline.light.zh-CN.1280x800/collapsed.png",
+        "group-chat.multiline.light.zh-CN.1280x800/final.png"
+      ],
+      "errors": [],
+      "warnings": [],
+      "hostMissing": [
+        "onSessionAttentionCleared",
+        "onUsageSessionSpendChanged",
+        "localDb",
+        "maker",
+        "authHasPersistedSessionHintSync",
+        "appearanceSettings",
+        "getFullscreenState",
+        "onFullscreenChange",
+        "agentIsland",
+        "setApplicationMenuLocale",
+        "setUpdateRelaunchTheme"
+      ],
+      "focus": [],
+      "timings": {
+        "readyMs": 176,
+        "checkMs": 165,
+        "totalMs": 394
+      }
+    },
+    {
+      "id": "group-chat.multiline.dark.zh-CN.1280x800",
+      "role": "after",
+      "page": "group-chat",
+      "case": "multiline",
+      "about": "Eight-line draft pushes the composer up",
+      "theme": "dark",
+      "locale": "zh-CN",
+      "platform": "darwin",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "status": "passed",
+      "screenshots": [
+        "group-chat.multiline.dark.zh-CN.1280x800/initial.png",
+        "group-chat.multiline.dark.zh-CN.1280x800/connected.png",
+        "group-chat.multiline.dark.zh-CN.1280x800/collapsed.png",
+        "group-chat.multiline.dark.zh-CN.1280x800/final.png"
+      ],
+      "errors": [],
+      "warnings": [],
+      "hostMissing": [
+        "onSessionAttentionCleared",
+        "onUsageSessionSpendChanged",
+        "localDb",
+        "maker",
+        "authHasPersistedSessionHintSync",
+        "appearanceSettings",
+        "getFullscreenState",
+        "onFullscreenChange",
+        "agentIsland",
+        "setApplicationMenuLocale",
+        "setUpdateRelaunchTheme"
+      ],
+      "focus": [],
+      "timings": {
+        "readyMs": 185,
+        "checkMs": 140,
+        "totalMs": 383
+      }
+    },
+    {
+      "id": "group-chat.no-sidebar.light.zh-CN.1280x800",
+      "role": "after",
+      "page": "group-chat",
+      "case": "no-sidebar",
+      "about": "Collapsed sidebar layout",
+      "theme": "light",
+      "locale": "zh-CN",
+      "platform": "darwin",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "status": "passed",
+      "screenshots": [
+        "group-chat.no-sidebar.light.zh-CN.1280x800/initial.png",
+        "group-chat.no-sidebar.light.zh-CN.1280x800/connected.png",
+        "group-chat.no-sidebar.light.zh-CN.1280x800/collapsed.png",
+        "group-chat.no-sidebar.light.zh-CN.1280x800/final.png"
+      ],
+      "errors": [],
+      "warnings": [],
+      "hostMissing": [
+        "onSessionAttentionCleared",
+        "onUsageSessionSpendChanged",
+        "localDb",
+        "maker",
+        "authHasPersistedSessionHintSync",
+        "appearanceSettings",
+        "getFullscreenState",
+        "onFullscreenChange",
+        "agentIsland",
+        "setApplicationMenuLocale",
+        "setUpdateRelaunchTheme"
+      ],
+      "focus": [],
+      "timings": {
+        "readyMs": 176,
+        "checkMs": 138,
+        "totalMs": 364
+      }
+    },
+    {
+      "id": "group-chat.no-sidebar.dark.zh-CN.1280x800",
+      "role": "after",
+      "page": "group-chat",
+      "case": "no-sidebar",
+      "about": "Collapsed sidebar layout",
+      "theme": "dark",
+      "locale": "zh-CN",
+      "platform": "darwin",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "status": "passed",
+      "screenshots": [
+        "group-chat.no-sidebar.dark.zh-CN.1280x800/initial.png",
+        "group-chat.no-sidebar.dark.zh-CN.1280x800/connected.png",
+        "group-chat.no-sidebar.dark.zh-CN.1280x800/collapsed.png",
+        "group-chat.no-sidebar.dark.zh-CN.1280x800/final.png"
+      ],
+      "errors": [],
+      "warnings": [],
+      "hostMissing": [
+        "onSessionAttentionCleared",
+        "onUsageSessionSpendChanged",
+        "localDb",
+        "maker",
+        "authHasPersistedSessionHintSync",
+        "appearanceSettings",
+        "getFullscreenState",
+        "onFullscreenChange",
+        "agentIsland",
+        "setApplicationMenuLocale",
+        "setUpdateRelaunchTheme"
+      ],
+      "focus": [],
+      "timings": {
+        "readyMs": 175,
+        "checkMs": 139,
+        "totalMs": 366
+      }
+    },
+    {
+      "id": "pr6016-presets.default.light.zh-CN.900x700",
+      "role": "after",
+      "page": "pr6016-presets",
+      "case": "default",
+      "about": "Preset menu: wheel, final option selection and Escape focus return",
+      "theme": "light",
+      "locale": "zh-CN",
+      "platform": "darwin",
+      "viewport": {
+        "width": 900,
+        "height": 700
+      },
+      "status": "passed",
+      "screenshots": [
+        "pr6016-presets.default.light.zh-CN.900x700/initial.png",
+        "pr6016-presets.default.light.zh-CN.900x700/after-wheel.png",
+        "pr6016-presets.default.light.zh-CN.900x700/last-option.png",
+        "pr6016-presets.default.light.zh-CN.900x700/final.png"
+      ],
+      "errors": [],
+      "warnings": [],
+      "hostMissing": [
+        "authHasPersistedSessionHintSync",
+        "appearanceSettings",
+        "setApplicationMenuLocale",
+        "setUpdateRelaunchTheme"
+      ],
+      "focus": [],
+      "timings": {
+        "readyMs": 530,
+        "checkMs": 484,
+        "totalMs": 1369
+      }
+    },
+    {
+      "id": "pr6016-presets.default.dark.zh-CN.900x700",
+      "role": "after",
+      "page": "pr6016-presets",
+      "case": "default",
+      "about": "Preset menu: wheel, final option selection and Escape focus return",
+      "theme": "dark",
+      "locale": "zh-CN",
+      "platform": "darwin",
+      "viewport": {
+        "width": 900,
+        "height": 700
+      },
+      "status": "passed",
+      "screenshots": [
+        "pr6016-presets.default.dark.zh-CN.900x700/initial.png",
+        "pr6016-presets.default.dark.zh-CN.900x700/after-wheel.png",
+        "pr6016-presets.default.dark.zh-CN.900x700/last-option.png",
+        "pr6016-presets.default.dark.zh-CN.900x700/final.png"
+      ],
+      "errors": [],
+      "warnings": [],
+      "hostMissing": [
+        "authHasPersistedSessionHintSync",
+        "appearanceSettings",
+        "setApplicationMenuLocale",
+        "setUpdateRelaunchTheme"
+      ],
+      "focus": [],
+      "timings": {
+        "readyMs": 128,
+        "checkMs": 475,
+        "totalMs": 675
+      }
+    },
+    {
+      "id": "pr6016-presets.short.light.zh-CN.900x420",
+      "role": "after",
+      "page": "pr6016-presets",
+      "case": "short",
+      "about": "420px viewport: the same menu stays inside the window and remains scrollable",
+      "theme": "light",
+      "locale": "zh-CN",
+      "platform": "darwin",
+      "viewport": {
+        "width": 900,
+        "height": 420
+      },
+      "status": "passed",
+      "screenshots": [
+        "pr6016-presets.short.light.zh-CN.900x420/initial.png",
+        "pr6016-presets.short.light.zh-CN.900x420/after-wheel.png",
+        "pr6016-presets.short.light.zh-CN.900x420/last-option.png",
+        "pr6016-presets.short.light.zh-CN.900x420/final.png"
+      ],
+      "errors": [],
+      "warnings": [],
+      "hostMissing": [
+        "authHasPersistedSessionHintSync",
+        "appearanceSettings",
+        "setApplicationMenuLocale",
+        "setUpdateRelaunchTheme"
+      ],
+      "focus": [],
+      "timings": {
+        "readyMs": 130,
+        "checkMs": 489,
+        "totalMs": 671
+      }
+    },
+    {
+      "id": "pr6016-presets.short.dark.zh-CN.900x420",
+      "role": "after",
+      "page": "pr6016-presets",
+      "case": "short",
+      "about": "420px viewport: the same menu stays inside the window and remains scrollable",
+      "theme": "dark",
+      "locale": "zh-CN",
+      "platform": "darwin",
+      "viewport": {
+        "width": 900,
+        "height": 420
+      },
+      "status": "passed",
+      "screenshots": [
+        "pr6016-presets.short.dark.zh-CN.900x420/initial.png",
+        "pr6016-presets.short.dark.zh-CN.900x420/after-wheel.png",
+        "pr6016-presets.short.dark.zh-CN.900x420/last-option.png",
+        "pr6016-presets.short.dark.zh-CN.900x420/final.png"
+      ],
+      "errors": [],
+      "warnings": [],
+      "hostMissing": [
+        "authHasPersistedSessionHintSync",
+        "appearanceSettings",
+        "setApplicationMenuLocale",
+        "setUpdateRelaunchTheme"
+      ],
+      "focus": [],
+      "timings": {
+        "readyMs": 136,
+        "checkMs": 467,
+        "totalMs": 658
+      }
+    }
+  ],
+  "coverage": {
+    "base": "c48eb7161e4ab545161d1f162d9b0dc8a563b92e",
+    "changedCount": 6,
+    "covered": {
+      "apps/desktop/src/renderer/components/ui/popover.tsx": [
+        "group-chat",
+        "pr6016-presets"
+      ],
+      "apps/desktop/src/renderer/components/settings/ProviderConnectionDialog.tsx": [
+        "pr6016-presets"
+      ],
+      "apps/desktop/scripts/fixtures/pr6016-validation/provider-presets.tsx": [
+        "pr6016-presets"
+      ]
+    },
+    "replacedOnly": {},
+    "uncovered": [],
+    "selected": [
+      "group-chat",
+      "pr6016-presets"
+    ]
+  },
+  "compare": null,
+  "errors": [],
+  "cleanup": {
+    "runtimeClosed": true,
+    "scratchRemoved": true
+  },
+  "versions": {
+    "electron": "42.11.12",
+    "chrome": "148.0.7778.280"
+  },
+  "finishedAt": "2026-10-19T09:38:54.177Z"
+}
