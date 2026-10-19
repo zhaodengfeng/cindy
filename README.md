@@ -31,3 +31,18 @@ exact generated Git objects were transported to this fork through the
 authenticated GitHub plugin and a one-time fork Actions workflow.
 
 These orphan-history evidence branches are not for merging into the project.
+
+## Final merge verification
+
+The upstream branch advanced during publication. Final product head:
+`e5933d59798f89118cfe2246c242d73e946bd69c`, based on
+`cb1002069c5bd75aab0ee0839693b4b52fba82ba`.
+Only the generated design-inventory conflict was resolved; the two production
+components, regression test, frozen lockfile and temporary UI scenario are
+byte-identical to the earlier validated head. The current `--changed --theme all`
+run again passed 14/14, UNCOVERED=[], and is retained in final-summary.json.
+The final run's overviews were inspected (two are byte-identical to the earlier
+images); all screenshots remain unedited. The comparison summary still refers
+explicitly to the earlier head and baseline; it is not relabeled as a new run.
+78 related tests, desktop typecheck, design-inventory and DCO also passed at
+the final head. This does not claim full Desktop or Windows validation.
